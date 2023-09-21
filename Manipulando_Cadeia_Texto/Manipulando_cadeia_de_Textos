@@ -1,2 +1,102 @@
+                                                                       Manipulando Cadeia de Textos
+
+Pegar pedaços de strings para manipular, usando a sintaxe [1º :2º: 3º]
+● 1º é de onde irá começar o fatiamento, se não colocar nenhum valor o programa irá começar do 1º valor.
+● 2º é até onde vai o valor -1, significa de você colocar 10 ele irá te 9, se não colocar nenhum valor irá terminar no último valor.
+● 3º são os passos dados dentro do fatiamento, por padrão é 1, passando um valor por vez, porém isso é manipulável, podendo colocar o valor que quiser, como de 2 em 2, 3 em 3.
+
+
+                                                                              Fatiamento
+frase = 'Gabriel Matozinho Pereira'
+print(frase[9])
+a
+
+frase = 'Gabriel Matozinho Pereira'
+print(frase[9:13])
+atoz
+
+● O fatiamento ocorreu começando da 9ª posição até a 12ª porque na programação o último número é excluído quando se passa o parâmetro.
+frase = 'Gabriel Matozinho Pereira'
+print(frase[5:25:2])
+e aoih eer
+
+frase = 'Gabriel Matozinho Pereira'
+print(frase[:5])
+Gabri
+
+● Vai do índice 0 [G] até o índice 4 ou 5-1[i].Lembrando que o valor passado na 2º posição serve para indicar até onde vai o fatiamento menos 1.
+frase = 'Gabriel Matozinho Pereira'
+print(frase[18:])
+Pereira
+
+● Começa no índice 18 e como não a valor depois do “ : ”, vai até o fim da string.
+frase = 'Gabriel Matozinho Pereira'
+print(frase[9::3])
+azhPea
+
+                                                                                Análise
+
+
+len(frase):mostra o tamanho da string
+
+.count():Pede para o programa contar quantas vezes aparece o valor passado no parâmetro.
+
+frase.count(‘a’).
+
+Já faz a procura com o fatiamento.
+frase.count(‘a’,0,13).
+
+.find():Procura e mostra em qual posição começou o parâmetro.
+.find(‘eira’)
+
+Operador “in”, verifica se ali tem o objeto:
+‘Gabriel’ in frase, retorna True ou False
+
+                                                                            Transformação
+
+.replace():Substitui valores
+frase.replace(’Gabriel’,’Pedro’)
+Fez a substituição de um nome pelo outro
+
+.upper(): Coloca tudo em maiúsculo
+frase = 'Gabriel Matozinho Pereira'
+print(frase.split())
+GABRIEL MATOZINHO PEREIRA
+
+.lower(): Coloca tudo em minúsculo
+frase = 'gabriel Matozinho Pereira'
+print(frase.lower())
+Gabriel matozinho pereira
+
+.capitalize(): Coloca a primeira letra em maiúsculo
+frase = 'Gabriel Matozinho Pereira'
+print(frase.capitalize())
+Gabrie matozinho pereira
+
+.title(): Coloca todas as primeiras letras em maiúsculo
+frase = 'Gabriel Matozinho Pereira'
+print(frase.title())
+Gabrie Matozinho Pereira
+
+.strip(): Remove espaços inúteis no início e no fim da string.
+.rstrip(): Remove espaços inúteis na parte direita string
+.lstrip(): Remove espaços inúteis na parte esquerda da string
+ 
+Divisão
+.split(): Onde tiver espaço na string ele irá fazer uma divisão
+frase = 'Gabriel Matozinho Pereira'
+print(frase.split())
+['Gabriel', 'Matozinho', 'Pereira']
+ 
+Junção
+‘-’.join(frase)
+frase = 'Gabriel Matozinho Pereira'
+print('-'.join(frase))
+G-a-b-r-i-e-l- -M-a-t-o-z-i-n-h-o- -P-e-r-e-i-r-a
+ 
+frase = 'Gabriel Matozinho Pereira'
+f1 =frase.split()
+print('-'.join(f1))
+Gabriel-Matozinho-Pereira
 
 
