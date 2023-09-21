@@ -1,9 +1,11 @@
-'''Faça um programa que leia um número de 0 a 9999 e mostre na tela coda um dos digitos separados.
+Faça um programa que leia um número de 0 a 9999 e mostre na tela coda um dos digitos separados.
 Ex: digite um número:1834
 unidade:4
 dezena:3
 centena:8
-milhar:1'''
+milhar:1
+
+
 num = int(input('Informe um número:'))
 u = num // 1 % 10
 d = num // 10 % 10
